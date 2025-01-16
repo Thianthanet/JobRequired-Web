@@ -44,7 +44,6 @@ const EditResumeUser = () => {
     e.preventDefault()
     try {
       const res = await updateResume(token, id, form)
-      console.log('res', res)
       toast.success("Update Resume Successed!!")
       handleToBack()
     }
